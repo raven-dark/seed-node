@@ -48,6 +48,8 @@ RUN apt-get autoclean && \
 
 RUN mkdir -p /root/data
 
+COPY ravendark.conf /root/data/ravendark.conf
+
 VOLUME /root/data
 
 # sentinel
@@ -62,4 +64,4 @@ RUN cd ~ && \
 #6666 is p2p
 EXPOSE 6666
 
-CMD ravendarkd
+CMD ravendarkd -datadir=/root/data
