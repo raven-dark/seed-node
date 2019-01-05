@@ -52,15 +52,6 @@ COPY ravendark.conf /root/data/ravendark.conf
 
 VOLUME /root/data
 
-# sentinel
-RUN apt-get install python3-pip -y;
-RUN pip3 install virtualenv;
-RUN cd ~ && \
-  git clone https://github.com/raven-dark/sentinel.git && cd sentinel && \
-  virtualenv ./venv && \
-  ./venv/bin/pip install -r requirements.txt && \
-  echo "* * * * *    root    cd /root/sentinel && ./venv/bin/python bin/sentinel.py >/dev/null 2>&1" >> /etc/crontab
-
 #6666 is p2p
 EXPOSE 6666
 
