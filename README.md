@@ -12,6 +12,10 @@ if you have less than 2gb of ram, run this:
 
 `sudo apt-get update && sudo apt-get install -y apt-transport-https ca-certificates curl software-properties-common vim && curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - && sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" && sudo apt-get update && sudo apt-get install -y docker-ce`
 
+#### clone repo
+
+`https://github.com/raven-dark/seed-node.git && cd seed-node`
+
 #### build the docker image
 
 `sudo docker build -t xrd .`
