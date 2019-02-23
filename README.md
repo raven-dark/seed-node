@@ -14,7 +14,7 @@ if you have less than 2gb of ram, run this:
 
 #### clone repo
 
-`https://github.com/raven-dark/seed-node.git && cd seed-node`
+`git clone https://github.com/raven-dark/seed-node.git && cd seed-node`
 
 #### build the docker image
 
