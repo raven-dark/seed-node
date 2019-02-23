@@ -1,5 +1,7 @@
 # seed-node
 
+instructions for ubuntu
+
 make sure port 6666 is open
 
 if you have less than 2gb of ram, run this:
