@@ -30,6 +30,8 @@ if you have less than 2gb of ram, run this:
 
 `sudo tail -n 10 -f ~/data/debug.log`
 
+(`ctrl + c` to exit the log)
+
 
 #### stop, restart, start, etc
 
