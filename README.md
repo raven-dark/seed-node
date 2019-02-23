@@ -25,3 +25,7 @@ if you have less than 2gb of ram, run this:
 #### run the docker image container
 
 `sudo docker run -d -p 6666:6666 -v ~/data:/root/data --name xrd xrd:latest`
+
+#### view logs
+
+`sudo tail -n 10 -f ~/data/debug.log`
