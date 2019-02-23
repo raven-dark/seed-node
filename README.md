@@ -29,3 +29,22 @@ if you have less than 2gb of ram, run this:
 #### view logs
 
 `sudo tail -n 10 -f ~/data/debug.log`
+
+
+#### stop, restart, start, etc
+
+stop
+
+`sudo docker stop xrd`
+
+restart
+
+`sudo docker restart xrd`
+
+stop and remove container
+
+`sudo docker stop xrd && sudo docker rm xrd`
+
+start existing, stopped container
+
+`sudo docker start xrd`
