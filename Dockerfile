@@ -31,9 +31,11 @@ RUN apt-get install -y \
   libboost-test-dev \
   libboost-thread-dev
 
+ENV VERSION=0.4.2
+
 RUN mkdir /ravendark
 
-RUN wget -qO- https://github.com/raven-dark/raven-dark/releases/download/0.4.1/ravendarkd-v0.4.1-ubuntu-14.04.tar.gz | tar xvz -C /ravendark
+RUN wget -qO- https://github.com/raven-dark/raven-dark/releases/download/${VERSION}/ravendarkd-v${VERSION}-ubuntu-trusty.tar.gz | tar xvz -C /ravendark
 
 RUN chmod +x /ravendark/ravendarkd
 RUN chmod +x /ravendark/ravendark-cli
